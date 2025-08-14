@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 1rem);
+}
+
+button {
+  width: 100%;
+  max-width: 7rem;
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  background-color: rgba(64, 106, 233, 0.807);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+#gameboard {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+}
+
+#cells-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: auto;
+  width: 225px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  font-size: 50px;
+  box-shadow: 0 0 0 2px;
+  border: 2px solid;
+  line-height: 75px;
+}
+
+#actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#start-btn {
+  background-color: rgba(36, 158, 36, 0.807);
+  margin-right: 5px;
+}
+
+#restart-btn {
+  background-color: rgba(64, 106, 233, 0.807);
+}
+
+#status-text {
+  font-size: 1.6rem;
+}
